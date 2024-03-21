@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+}
+/*He quitado margen y padding a todo y puesto una fuente para la letra*/
+
+body{
+    position: relative;
+}
+
+header{
+    background-color: #003b95;
+    width: 100%;
+    height: 250px;
+}
+/*Le he puesto un fondo azul al header, que ocupe todo el ancho y una altura de 300px*/
+
+header > *{
+    color: white;
+    margin-left: 80px;
+}
+/*He dicho que la letra sea blanca y que todos los elementos de la cabezera tengan una separción del margen izquierdo de 80px*/
+
+header > img{
+    padding-left: 80%;
+}
+
+header > a{
+    text-decoration: none;
+    display: inline;
+}
+/*Le he quitado la decoración a los enlaces*/
+
+#tema{
+    border-radius: 20px;
+    margin-left: 80%;
+    margin-bottom: 30px;
+    height: 30px;
+    width: 28px;
+}
+
+.tema {
+    height: 28px;
+    width: 28px;
+}
+
+#temas{
+    border-radius: 20px;
+    margin-left: 80%;
+    margin-bottom: 30px;
+    height: 30px;
+    width: 28px;
+}
+
+#temas > img{
+    height: 28px;
+    width: 28px;
+}
+
+
+header > h2{
+    padding-top: 10px;
+}
+
+#Form{
+    padding-left: 80px;
+}
+
+#logo{
+    width: 200px;
+    font-size: 25px;
+}
+/*He puesto una id porque solo queria cambiar el tamaño de ese elemento*/
+
+header > section{
+    margin-top: 7px;
+}
+
+header > section > h1{
+    font-size: 50px;
+}
+
+header > section > h1 ~ h2{
+    padding-top: 10px;
+}
+/*He puesto que al h2 precedido por un h1 tenga mas separación con él*/
+
+main{
+    padding-bottom: 50px;
+}
+
+main > section{
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10%;
+}
+/*He puesto que los elementos de section tengan 5% de margen tanto con la izquierda como con la derecha, y lo he puesto con un display grid indicando que quiero 3 columnas iguales con una separación de 10%*/
+
+main > section > article{
+    width: 250px;
+    margin-bottom: 50px;   
+}
+/*He puesto que los article dentro del section tengan una anchura de 250px*/
+
+main > section > article > a{
+    text-decoration: none;
+}
+
+.casa1{
+    position: absolute;
+}
+
+main > section > article > a > img{
+    height: 300px;
+    width: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+/*He puesto unas medidas para las imagenes del article y dado la propiedad de cover para que se rellene*/
+
+main > section > article > a > div{
+    margin-top: 320px;
+}
+
+main > section > article > a > div > h1{
+    color: #17181b;
+    font-size: 22px;
+}
+
+main > section > article > a > div > p{
+    color: #27282c;
+    font-size: 16px;
+    text-align: justify;
+    margin-top: 10px;
+}
+/*Aqui le he puesto con justify para que ocupe el mismo ancho que la imagen*/
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+/*He puesto el footer abajo de todo con un ancho del 100%*/
+
+footer > p{
+    text-align: center;
+    padding-top: 5px;
+}
+
+/*Ahora es el css de las paginas de los hoteles y casas*/
+
+.headerPaginas{
+    background-color: #003b95;
+    width: 100%;
+    height: 100px; 
+}
+/*Aqui he cambiado el header porque no queria que fuese tan grande como en la primera página*/
+
+#logo{
+    margin-top: 15px;
+    margin-left: 80px;
+}
+/*Aquí he movido un poco el logo de sitio*/
+
+.mainPaginas{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+/*He puesto que dentro del main de las páginas este en columna*/
+
+.mainPaginas > h1{
+    margin: auto;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.imagenes{
+    margin-right: 100px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+/*Aqui he puesto un div para contener todas las fotos*/
+
+.grande{
+    height: 420px;
+}
+/*He puesto la misma altura que la imagen para que no ocupe más*/
+
+.grande > img{
+    width: 500px;
+    height: 420px;
+    object-fit: cover;
+}
+
+.peque > img{
+    width: 250px;
+    height: 200px;
+    margin-left: 20px;
+    padding-bottom: 20px;
+    object-fit: cover;
+}
+/*Aqui también he puesto que estén separadas por un margen de 20px*/
+
+.texto2{
+    margin-left: 120px;
+    margin-right: 120px;
+    padding-top: 20px;
+}
+
+.texto2 > p{
+    padding-top: 20px;
+    text-align: justify;
+}
+
+#TFormulario{
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input[type="submit"],
+button {
+    background-color: #4c7aaf;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="submit"]:hover,
+button:hover {
+    background-color: #0056B3;
+}
+/* Estilos de la caja de comentarios */
+.comment-box {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #F9F9F9;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+#comment-form input,
+#comment-form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+#submit-comment {
+    display: block;
+    margin: 0 auto;
+    padding: 12px 24px;
+    background-color: #4c7aaf;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#submit-comment:hover {
+    background-color: #0056B3;
+}
+/* Estilos de los comentarios */
+.comment {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+
+/*El trabajo lo inicié en clase por lo que al principio la pantalla era de 1280x800, así que añadiré un media para pantallas más grandes y otro para más pequeñas*/
+/*La primera resolución que he puesto es que sea para más de 1600px de ancho*/
+@media screen and (min-width: 1600px){
+   main > section{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   }
+/*Como en la otra tenia que solo hubiera 3 columnas le he agregado una*/
+
+    .imagenes{
+        margin-left: 10%;
+        margin-right: auto;
+        align-items: flex-start;
+    }
+
+    .grande{
+        height: 520px;
+    }
+    .grande > img{
+        width: 620px;
+        height: 520px;
+    }
+
+    .peque > img{
+        width: 300px;
+        height: 248px;
+        flex-wrap: nowrap;
+    }
+    /*He cambiado un poco la medida de las imagenes para que sean más grandes*/
+}
+
+@media screen and (min-width: 1024px) {
+    .imagenes{
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+
+    .peque{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/*La otra resolución es para dispositivos con menos de 1024px de ancho*/
+@media screen and (max-width: 1024px) {
+    main > section{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+/*He quitado un poco de los margenes laterales en el section*/    
+
+    .imagenes{
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+/*He cambiado como se ordenan las imagenes en resoluciones más pequeñas y esté la imagen grande en medio y el resto debajo*/
+    .grande{
+        padding-bottom: 20px;
+    }
+    /*He hecho un poco de separación con la imagen grande y las pequeñas*/
+}
+
+@media screen and (max-width: 700px) {
+    main > section{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5%;
+        margin-left: 8%;
+    }
+
+    .peque{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: auto;
+        margin-right: 9%;
+    }
+}

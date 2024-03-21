@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estils.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <header class="headerPaginas">
+        <a href="../inici.html"><h2 id="logo">Tuhotel.com</h2></a>
+    </header>
+    <h1 id="TFormulario">Formulario de contacto</h1>
+    <div class="container">
+        <form id="contactForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" minlength="3" maxlength="20" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="E-Mail" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="3" required placeholder="Mesajes privados"></textarea>
+            <input type="submit" value="Enviar" onclick="formulario()">
+        </form>
+    </div>
+    <br>
+    <div class="comment-box">
+        <h2>Deja tu comentario</h2>
+        <form id="comment-form">
+          <input type="text" id="nombre2" placeholder="Tu nombre">
+          <textarea id="comentario" placeholder="Escribe tu comentario aquí..."></textarea>
+          <button type="button" id="submit-comment" onclick="AgregarComentarios()">Comentar</button>
+        </form>
+        <br>
+        <div id="comment-section">
+        </div>
+    </div>
+    <script src="../index.js"></script>
+</body>
+</html>
